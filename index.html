@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    
+    <title>Basketball Scoreboard</title>
+</head>
+<body>
+    <h1> Scoreboard </h1>
+    <div id="scoreboard-container">
+        <div class="scores" id="home-side">
+            <h2> HOME </h2>
+            <h3 class="score" id="home-score"> 0 </h3>
+        </div>
+
+        <div id="time-clock">
+            <h3 id="time"> 12:00 </h3>
+            <h2> PERIOD </h2>
+            <div id="period-container">
+                <button onclick="periodDown()"> < </button>
+                <h3 id="period"> 1 </h3> 
+                <button onclick="periodUp()"> > </button>
+            </div>
+        </div>
+
+        <div class="scores" id="visitor-side">
+            <h2> VISITOR </h2>
+            <h3 class="score" id="visitor-score"> 0 </h3>
+        </div>
+    </div>
+
+    <div id="score-btns">
+        <div id="Hscorebtns">
+            <p>Home</p>
+            <button onclick="add1Home()"> +1 </button>
+            <button onclick="add2Home()"> +2 </button>
+            <button onclick="add3Home()"> +3 </button>
+        </div>
+    <div id="Vscorebtns">
+            <p> Visitor</p>
+            <button onclick="add1Visitor()"> +1 </button>
+            <button onclick="add2Visitor()"> +2 </button>
+            <button onclick="add3Visitor()"> +3 </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
